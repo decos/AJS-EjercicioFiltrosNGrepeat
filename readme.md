@@ -1,4 +1,4 @@
-# FILTROS AL ng-repeat
+## FILTROS AL ng-repeat
 
 1. Crear una tabla en la vista que utilice la directiva `ng-repeat`
 
@@ -17,3 +17,26 @@ Añadir filtro
 6. Modificar el valor de las opciones `ng-model` : `busqueda.nombre` y `busqueda.sexo`
 
 7. Modificar el comando `filter:busqueda` (filtro por busqueda)
+
+## ORDER BY - EN FILTROS Y ng-repeat
+
+1. Ordenar la tabla de manera ascedente (nombre)
+    - `orderBy:'nombre'`
+
+2. Ordenar la tabla de manera descentente (nombre)
+    - `orderBy:'-nombre'`
+
+3. Crear una clase dentro de la etiqueta `estilos`
+
+4. Añadir la directiva `ng-click` a la columna `nombre`
+    - `reverse = !reverse`
+
+5. Definir si es ascendente o descentente al hacer clic en la cabecera de la columna
+    - `orderBy:'nombre':reverse`
+
+6. Definir que columna es en cada cabecera
+    - `columna='nombre';`
+    - `columna='sexo';`
+
+7. Modificar el filtro (ordernar)
+    - `orderBy:columna:reverse`
